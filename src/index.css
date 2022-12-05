@@ -1,0 +1,180 @@
+body {
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  font-family: sans-serif;
+  font-size: 16px;
+  background: rgb(2,0,36);
+  background: rgb(2,0,36);
+background: linear-gradient(357deg, rgba(2,0,36,1) 0%, rgba(9,81,121,1) 12%, rgba(0,212,255,1) 100%);
+}
+.App{
+  background-color: white;
+  width: 56vw;
+  height: 130vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: 23%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+h1{
+  margin-right: 37%;
+  padding-top: 7%;
+  font-family: "Century Gothic";
+  font-size:300%;
+
+}
+h4{
+  font-family: "Century Gothic";
+  color:red;
+  margin-right: 30%;
+  margin-bottom: 4%;
+  margin-top: -2%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+input {
+  position: relative;
+  font-size: 14px;
+  border-top: 20px solid transparent;
+  margin-bottom: 5px;
+  display: inline-block;
+  --field-padding: 10px;
+  margin-left:40%;
+}
+
+ input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #dddddd;
+  padding: var(--field-padding);
+  border-radius: 3px;
+  width: 500px;
+  outline: none;
+  font-size: 14px;
+}
+input:hover {
+  cursor: text;
+  color: #333333;
+  background-color: #bbbbbb;
+  border-color: #333333;
+}
+textarea {
+  background-color: #dddddd;
+  color: #666666;
+  padding: 1em;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 400px;
+  height: 100px;
+  transition: all 0.2s;
+  margin-left:40%;
+}
+
+textarea:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+textarea:focus {
+  cursor: text;
+  color: #333333;
+  background-color: white;
+  border-color: #333333;
+}
+label{
+  align-items: left;
+  justify-content: left;
+  color:black;
+}
+.publish{
+  margin-right: 75%;
+}
+
+.custom-field .placeholder {
+  position: absolute;
+  left: -76px;
+  width: 32;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  top: 30px;
+  line-height: 100%;
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: 
+    top 0.3s ease,
+    color 0.3s ease,
+    font-size 0.3s ease;
+}
+ input:focus{
+  font-size:18px;
+  color:#222;
+  border: #222;
+}
+.custom-field input.dirty + .placeholder,
+.custom-field input:focus + .placeholder,
+.custom-field input:not(:placeholder-shown) + .placeholder {
+  top: -10px;
+  font-size: 10px;
+  color: #222;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select Cover Image';
+  display: inline-block;
+  background: white;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  margin-left: 50%;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
